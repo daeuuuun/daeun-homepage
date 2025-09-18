@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import AboutPage from './pages/AboutPage';
+import ExpertisePage from './pages/ExpertisePage';
+import TitlePage from './pages/TitlePage';
 
-function App() {
+export default function App() {
+  const sectionStyle = {
+    minHeight: '100vh',
+    padding: '4rem',
+    color: '#fff',
+    display: 'flex',
+    flexDirection: 'column' as const,
+    justifyContent: 'center',
+    alignItems: 'center',
+    fontSize: '2rem',
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <section id='title'>
+        <TitlePage />
+      </section>
+      <section id="about">
+        <AboutPage />
+      </section>
+      <section id="expertise">
+        <ExpertisePage />
+      </section>
+      <section id="projects" style={{ ...sectionStyle, background: '#555' }}>
+        <h1>Projects</h1>
+        <p>프로젝트 내용...</p>
+      </section>
+      <section id="contact" style={{ ...sectionStyle, background: '#666' }}>
+        <h1>Contact</h1>
+        <p>연락처 내용...</p>
+      </section>
+    </>
   );
 }
-
-export default App;

@@ -1,0 +1,204 @@
+.aboutMain {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  color: var(--color-dark-white);
+  font-family: Pretendard, sans-serif;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* 왼쪽 프로필 카드 */
+.profileCard {
+  background: #1d1d1d;
+  border-radius: 2rem;
+  width: 23rem;
+  min-height: 50rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+  margin: 4rem 0 1.2rem 0;
+  background-image: url('../assets/img/KakaoTalk_20250825_102743952.jpg');
+  background-size: cover;
+  background-position: 0% 30%;
+}
+
+.name {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.birth {
+  margin: 0.5rem 0 0.8rem 0;
+  font-size: 1.1rem;
+  color: var(--color-dark-white);
+}
+
+.role {
+  padding: 0.4rem 1rem;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-dark-darkgray);
+  background: var(--color-dark-black);
+}
+
+.line {
+  margin: 1.5rem 0;
+  width: 80%;
+  height: 1px;
+  background: var(--color-dark-darkgray);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.tags span {
+  padding: 0.3rem 0.8rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--color-dark-darkgray);
+  background: var(--color-dark-black);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.iconBox {
+  width: 3.1rem;
+  height: 3.1rem;
+  background-color: var(--color-dark-white);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.links a {
+  color: var(--color-dark-white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: var(--color-dark-pink);
+}
+
+.signature {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 4rem;
+  color: var(--color-dark-pink);
+}
+
+/* 오른쪽 정보 카드 */
+.infoCard {
+  flex: 1;
+  background: #1e1e1e;
+  border-radius: 2rem;
+  padding: 2.5rem;
+  max-width: 58rem;
+  min-height: 49rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  border-left: 3px solid var(--color-dark-pink);
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.education {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.education li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+.period {
+  display: inline-block;
+  width: 250px;
+  color: var(--color-dark-white);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/* ---------- 📱 반응형 ---------- */
+@media (max-width: 1100px) {
+  .aboutMain {
+    gap: 2rem;
+    padding: 3rem 1.5rem;
+  }
+  .infoCard {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  .aboutMain {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profileCard {
+    width: 90%;
+    min-height: auto;
+  }
+  .infoCard {
+    width: 90%;
+    min-height: auto;
+    padding: 2rem;
+  }
+  .avatar {
+    width: 180px;
+    height: 180px;
+  }
+  .name {
+    font-size: 1.6rem;
+  }
+  .sectionTitle {
+    font-size: 1.3rem;
+  }
+}
