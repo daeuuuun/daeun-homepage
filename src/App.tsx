@@ -1,6 +1,8 @@
 import Header from './components/Header';
 import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 import ExpertisePage from './pages/ExpertisePage';
+import ProjectsPage from './pages/ProjectsPage';
 import TitlePage from './pages/TitlePage';
 
 export default function App() {
@@ -27,13 +29,11 @@ export default function App() {
       <section id="expertise">
         <ExpertisePage />
       </section>
-      <section id="projects" style={{ ...sectionStyle, background: '#555' }}>
-        <h1>Projects</h1>
-        <p>프로젝트 내용...</p>
+      <section id="projects">
+        <ProjectsPage />
       </section>
-      <section id="contact" style={{ ...sectionStyle, background: '#666' }}>
-        <h1>Contact</h1>
-        <p>연락처 내용...</p>
+      <section id="contact">
+        <ContactPage />
       </section>
     </>
   );

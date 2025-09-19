@@ -1,7 +1,9 @@
 .titleMain {
   position: relative;
-  height: 100vh;
+  min-height: 100dvh;
   background-image: url('../assets/img/타이틀.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .textP {
@@ -11,59 +13,30 @@
   position: absolute;
 }
 
-.textP:nth-child(1) {
-  top: 5rem;
-  right: 3.5rem;
-}
-.textP:nth-child(2) {
-  top: 15rem;
-  left: 3.5rem;
-}
-.textP:nth-child(3) {
-  top: 34rem;
-  right: 3.5rem;
-}
+.textP:nth-child(1) { top: 5rem; right: 3.5rem; }
+.textP:nth-child(2) { top: 15rem; left: 3.5rem; }
+.textP:nth-child(3) { top: 34rem; right: 3.5rem; }
 
-.bigBold,
-.bigLight {
+.bigBold, .bigLight {
   display: inline-block;
   font-size: 9rem;
-  font-weight: 700;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.bigBold {
-  font-weight: 700;
-}
+.bigBold { font-weight: 700; }
+.bigLight { font-weight: 100; }
 
-.bigLight {
-  font-weight: 100;
-}
-
-/* Hover 시 동작 */
-.bigBold:hover,
-.bigLight:hover {
+.bigBold:hover, .bigLight:hover {
   transform: rotate(-5deg) scale(1.1);
   color: var(--color-dark-pink);
 }
 
-/* 태블릿 */
 @media (max-width: 1024px) {
-  .textP:nth-child(1) {
-    top: 4rem;
-    right: 2rem;
-  }
-  .textP:nth-child(2) {
-    top: 12rem;
-    left: 2rem;
-  }
-  .textP:nth-child(3) {
-    top: 26rem;
-    right: 2rem;
-  }
+  .textP:nth-child(1) { top: 4rem; right: 2rem; }
+  .textP:nth-child(2) { top: 12rem; left: 2rem; }
+  .textP:nth-child(3) { top: 26rem; right: 2rem; }
 }
 
-/* 모바일 */
 @media (max-width: 768px) {
   .textP {
     position: static;
