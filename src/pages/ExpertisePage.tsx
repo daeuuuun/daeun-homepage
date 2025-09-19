@@ -15,9 +15,9 @@ const charts = [
       { subject: '섬세함', value: 10 },
       { subject: '집중력', value: 9 },
       { subject: '성실함', value: 9 },
-      { subject: '적응력', value: 7 },
-      { subject: '소통', value: 7 },
-      { subject: '책임감', value: 8 },
+      { subject: '적응력', value: 8 },
+      { subject: '소통', value: 9 },
+      { subject: '책임감', value: 9 },
     ],
   },
   {

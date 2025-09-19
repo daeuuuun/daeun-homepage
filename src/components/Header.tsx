@@ -8,7 +8,7 @@ const FiMenu = FiMenuIcon as unknown as ElementType;
 const FiX = FiXIcon as unknown as ElementType;
 
 const labels = [
-  { to: 'title', eng: 'Title', kor: '타이틀' },
+  { to: 'title', eng: 'Title', kor: '메인' },
   { to: 'about', eng: 'About', kor: '소개' },
   { to: 'expertise', eng: 'Expertise', kor: '경험' },
   { to: 'projects', eng: 'Projects', kor: '프로젝트' },

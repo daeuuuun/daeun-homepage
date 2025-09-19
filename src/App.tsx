@@ -6,16 +6,6 @@ import ProjectsPage from './pages/ProjectsPage';
 import TitlePage from './pages/TitlePage';
 
 export default function App() {
-  const sectionStyle = {
-    minHeight: '100vh',
-    padding: '4rem',
-    color: '#fff',
-    display: 'flex',
-    flexDirection: 'column' as const,
-    justifyContent: 'center',
-    alignItems: 'center',
-    fontSize: '2rem',
-  };
 
   return (
     <>

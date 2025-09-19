@@ -7,7 +7,7 @@
   min-height: 100dvh;
   background: var(--color-dark-black);
   color: var(--color-dark-white);
-  padding: 2rem;
+  padding: 10rem 2rem;
   overflow: hidden;
   box-sizing: border-box;
 }
